@@ -1,0 +1,17 @@
+type User @model {
+  id: ID!
+  username: String
+  visibility: Visibility
+  avatar: S3Object
+}
+
+type S3Object {
+  bucket: String!
+  region: String!
+  key: String!
+}
+
+enum Visibility {
+  public
+  private
+}

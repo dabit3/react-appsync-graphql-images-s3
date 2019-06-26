@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "gqls3test",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authgqls3testeb3f615e",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
