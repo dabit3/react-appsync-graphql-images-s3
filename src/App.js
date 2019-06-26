@@ -34,7 +34,7 @@ function App() {
 
   function handleChange(event) {
     const { target: { value, files } } = event
-    const [image,] = files || []
+    const [image] = files || []
     updateFile(image || value)
   }
 
