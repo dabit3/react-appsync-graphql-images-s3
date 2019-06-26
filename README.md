@@ -21,6 +21,8 @@ In this example, I show how to:
 1. Store images using GraphQL, AppSync, and S3
 2. Fetch a list of images and render them in a React application
 
+> To view the main code for this app, open [src/App.js](https://github.com/dabit3/react-amplify-appsync-s3/blob/master/src/App.js)
+
 ## To deploy this app
 
 1. Clone the project and change into the directory
