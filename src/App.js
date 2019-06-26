@@ -45,7 +45,7 @@ function App() {
      users = users.data.listUsers.items
      // create Amazon S3 api calls for items in list
      const userRequests = users.map(u => Storage.get(u.avatar.key))
-     // get signed Image URLs from S3 for each item in array
+     // get signed Image URLs from S3 for each item in array by making the API call
      const userData = await(Promise.all(userRequests))
      // add new signed url to each item in array
      users.forEach((u, i) => {
