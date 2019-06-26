@@ -43,7 +43,7 @@ function App() {
      // fetch all items from DB
      let users = await API.graphql(graphqlOperation(listUsers))
      users = users.data.listUsers.items
-     // create api calls for items in list
+     // create Amazon S3 api calls for items in list
      const userRequests = users.map(u => Storage.get(u.avatar.key))
      // get signed Image URLs from S3 for each item in array
      const userData = await(Promise.all(userRequests))
